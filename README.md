@@ -249,7 +249,8 @@ In simple terms, the simulated results are very close to the theoretical values,
 
 ## Circuit :2c
 ## Circuit diagram:
-![Image description]()
+![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no-4/blob/main/circuit_2c.png?raw=true)
+## DC Operating point:
 ![Image description]()
 ![Image description]()
 ![Image description]()
