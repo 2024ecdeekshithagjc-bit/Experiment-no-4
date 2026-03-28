@@ -116,5 +116,56 @@ V_{ICM(min)} = -0.7 + 0.36 = -0.34,V
 ## b)second output waveform:
 ![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no-4/blob/main/output%20waveform%202.png?raw=true)
 ## DC sweep:
-![Image description]()
+![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no-4/blob/main/DC_sweep1.png?raw=true)
 
+## Step 1: Total Current Calculation
+P = (VDD - VSS) \ Itotal 2 × 10⁻³ = (0.9 - (-0.9)) \ Itotal
+
+2 × 10⁻³ = 1.8 \ Itotal
+
+Itotal = {2 × 10⁻³} \ {1.8} = 1.11 mA
+
+So, tail current: I_{tail} = 1.11 mA
+
+Each transistor carries:
+
+I_D = {I_{tail}}{2} = 0.555 { mA}
+
+To Check M3 is in saturation :
+VDS3 = Vp -VSS VDS3 = -0.7V + 0.9V = 0.2V
+
+VGS3 -Vth <= 0.2 VinCM-max = Vp + VGS1 VGS1 = 0.7V, Vth = 0.7V VinCM-max = 0V
+
+Transconductance (gm)
+ g_m = \frac{2I_D}{V_{OV}} 
+
+ g_m = \frac{2 \times 0.555 \text{ mA}}{0.2} = 5.55 \text{ mS} 
+
+## MOSFET Sizing (W/L)
+Using:  I_D = \frac{1}{2} k_n \frac{W}{L} V_{OV}^2 
+
+Assume:  k_n = 200 , \mu A/V^2 
+
+0.555 \text{ mA} = \frac{1}{2} \cdot 200 \times 10^{-6} \cdot \frac{W}{L} \cdot (0.2)^2 
+
+ 0.555 \times 10^{-3} = 100 \times 10^{-6} \cdot \frac{W}{L} \cdot 0.04 
+
+ 0.555 \times 10^{-3} = 4 \times 10^{-6} \cdot \frac{W}{L} 
+
+ \frac{W}{L} = \frac{0.555 \times 10^{-3}}{4 \times 10^{-6}} \approx 139 
+
+## Step 5: Output Resistance
+ r_o = \frac{1}{\lambda I_D} 
+
+Assume: lambda = 0.02 , V^{-1} 
+
+r_o = \frac{1}{0.02 \times 0.555 \times 10^{-3}} \approx 90 , k\Omega 
+
+## Step 6: Voltage Gain
+For differential amplifier: A_v = g_m \cdot r_o 
+
+A_v = 5.55 \times 10^{-3} \cdot 90 \times 10^{3} \approx 500 
+
+## Step 7: Output Common Mode Check
+ V_{oCM} = 0 V \quad (\text{given, satisfied with symmetric design}) 
+ 
