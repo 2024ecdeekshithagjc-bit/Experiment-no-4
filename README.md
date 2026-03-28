@@ -26,4 +26,4 @@ High Common-Mode Rejection Ratio (CMRR)
 Low power consumption (suitable for modern CMOS designs)
 High gain and good linearity
 ## Circuit Diagram :
-![Image description]()
+![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no-4/blob/main/circuit%20diagram.png?raw=true)
