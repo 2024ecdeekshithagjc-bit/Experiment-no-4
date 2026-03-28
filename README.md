@@ -166,6 +166,21 @@ For differential amplifier: A_v = g_m \cdot r_o
 
 A_v = 5.55 \times 10^{-3} \cdot 90 \times 10^{3} \approx 500 
 
-## Step 7: Output Common Mode Check
- V_{oCM} = 0 V \quad (\text{given, satisfied with symmetric design}) 
- 
+## final design summary:
+The final design summary represents the key performance parameters of the circuit in a simplified form. The tail current of 1.11 mA is the total bias current flowing through the differential pair, which gets equally divided between the two transistors. As a result, each branch carries a drain current of approximately 0.555 mA. Based on this operating current, the transconductance (gm) is calculated to be 5.55 mS, which indicates how effectively the input voltage is converted into output current.
+
+To achieve the desired performance, the transistor sizing is chosen such that the width-to-length (W/L) ratio is approximately 139. This relatively high ratio ensures sufficient current flow and improves gain. The output resistance of the circuit is around 90 kΩ, which plays a crucial role in determining the overall voltage gain.
+
+Combining the transconductance and output resistance, the circuit achieves a high voltage gain of approximately 500. This indicates that even a small input signal can be significantly amplified at the output, making the design suitable for applications requiring strong signal amplification.
+
+## Conclusion:
+The differential amplifier design is functionally correct, with experimental results showing good agreement with theoretical calculations. Deviations are within acceptable engineering limits and are expected in practical implementations.
+
+The designed MOS differential amplifier satisfies:
+
+Low power constraint (≤ 2 mW)
+Symmetric operation around 0 V
+High gain (~500)
+
+## second circuit:2b
+
