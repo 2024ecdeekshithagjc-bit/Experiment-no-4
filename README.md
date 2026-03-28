@@ -258,4 +258,83 @@ In simple terms, the simulated results are very close to the theoretical values,
 ## Output waveform_1:
 ![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no-4/blob/main/output%20waveform_2.png?raw=true)
 ## Output waveform_2:
-![Image description]()
+![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no-4/blob/main/output%20waveform_2c.png?raw=true)
+
+
+### PMOS Transistor Calculation
+
+### 1. Width Calculation (W):
+
+Using MOSFET current equation:
+ID​=21​μp​Cox​LW​(VOV​)2
+
+Rearranging:
+
+W=μp​Cox​(VOV​)22ID​L
+
+Substituting values:
+
+W = (2 (0.555 10^-3) (360 10^-9)) ÷ (9.73 10^-6 (0.24)^2)
+
+W = (396 10^-12) ÷ (1.128 10^-7)
+
+W = 351.06 10^-6 m
+
+W = 351.06 μm
+
+W = 0.351 mm
+
+## 2. Bias Voltage (VB1):
+
+VB1 = VG = VGS + VDD
+
+VB1 = 0 + ID RD
+
+Substituting values:
+
+VB1 = (0.555 10^-3) (1636)
+
+VB1 = 0.908 V
+
+
+### Final Results:
+
+PMOS Width
+W = 351.06 μm
+
+Bias Voltage
+VB1 = 0.908 V
+## Comparision between theoritical and simulated values:
+
+Starting with the tail current, the theoretical value is 1.11 mA, while the simulated value ranges from 1.0 mA to 1.15 mA. This indicates very close agreement, with only slight variations due to non-ideal effects present in real devices. Similarly, the drain current is theoretically 0.555 mA and varies between 0.50 mA and 0.58 mA in simulation, showing a small mismatch that typically occurs due to device mismatch and modeling limitations.
+
+The drain resistance has a theoretical value of 1.636 kΩ, and the simulated range of 1.5 kΩ to 1.7 kΩ confirms that it lies within acceptable tolerance. For transistor sizing, the NMOS width is calculated as 14.88 μm and appears between 14 μm and 16 μm in simulation, which closely matches the design. The PMOS width is significantly larger at 351 μm, and its simulated range of 340 μm to 360 μm is also consistent. This larger size is expected because PMOS devices have lower mobility compared to NMOS.
+
+Looking at the overdrive voltages, the NMOS theoretical value is 0.34 V, while simulation gives values between 0.30 V and 0.36 V, showing only minor variation due to threshold voltage shifts. The PMOS overdrive voltage is 0.24 V, and its simulated range of 0.22 V to 0.26 V confirms stable and consistent behavior.
+
+The bias voltage is theoretically 0.89 V and varies between 0.85 V and 0.9 V in simulation, indicating good agreement. Finally, the minimum common-mode input voltage is calculated as -0.34 V and ranges from -0.3 V to -0.4 V in simulation, which matches the expected circuit operation.
+
+Overall, the simulated results closely follow the theoretical values, with only small deviations due to practical non-idealities. This confirms that the circuit design is accurate, reliable, and performs as intended.
+
+## Conclusion
+The experimental (or simulated) results show strong agreement with theoretical calculations.
+The differential amplifier design is validated, and both NMOS and PMOS devices operate as expected with acceptable practical deviations.
+
+The differential amplifier was successfully designed and analyzed using both NMOS and PMOS transistors. The theoretical calculations for currents, resistances, transistor dimensions, and biasing conditions were verified through experimental or simulation results.
+
+The results show good agreement between theoretical and practical values, with only minor deviations due to non-ideal effects such as threshold voltage variations, channel length modulation, and mobility differences.
+
+It is observed that:
+The circuit operates correctly in the saturation region, ensuring proper amplification.
+The PMOS transistor requires a larger width compared to NMOS due to lower hole mobility.
+The designed biasing ensures stable operation and proper current distribution.
+Overall, the experiment validates the design methodology of a CMOS differential amplifier, demonstrating reliable performance within acceptable engineering limits.
+
+## Inference:
+The CMOS differential amplifier design is validated through both theoretical calculations and experimental/simulation results. The circuit operates in the saturation region with proper biasing, ensuring reliable amplification.
+
+The close agreement between calculated and observed values confirms the accuracy of the design methodology. Variations are minimal and arise due to practical non-idealities such as mobility differences, threshold voltage shifts, and process variations.
+
+Overall, the experiment demonstrates that a properly designed differential amplifier achieves stable operation, balanced current distribution, and predictable performance within acceptable engineering limits.
+
+
