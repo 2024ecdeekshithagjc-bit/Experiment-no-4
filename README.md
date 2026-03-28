@@ -228,7 +228,7 @@ VB1 = 0.908 V
 ![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no-4/blob/main/Transient_analysis_2b.png?raw=true)
 ## AC analysis :
 ## a)output waveform 1:
-![Image description]()
+![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no-4/blob/main/output_waveform_2b.png?raw=true)
 
 ## b)output waveform 2:
 ![Image description]()
