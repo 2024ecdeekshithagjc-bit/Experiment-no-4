@@ -231,5 +231,26 @@ VB1 = 0.908 V
 ![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no-4/blob/main/output_waveform_2b.png?raw=true)
 
 ## b)output waveform 2:
-![Image description]()
+![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no-4/blob/main/output_waveform_2.png?raw=true)
 
+## comparing the values of theoritical and simulated values:
+ the tail current is theoretically 1.11 mA, while the simulated value lies between 1.0 mA and 1.15 mA. This indicates a close agreement, with only small variations caused by non-ideal effects such as channel length modulation and process variations. Similarly, the drain current for each transistor is calculated as 0.555 mA, and the simulated range of 0.50 mA to 0.58 mA shows a slight mismatch, which is mainly due to device mismatch and modeling inaccuracies.
+
+The drain resistance is designed as 1.636 kΩ, and the simulated values range from 1.5 kΩ to 1.7 kΩ. This falls well within acceptable tolerance limits, confirming that the resistor implementation is accurate. For transistor sizing, the NMOS width is theoretically 14.88 μm and varies between 14 μm and 16 μm in simulation, which closely matches the design expectations. In the case of PMOS, the width is much larger at 351 μm, with simulated values between 340 μm and 360 μm. This increase is expected because PMOS devices have lower carrier mobility compared to NMOS, requiring a larger size to achieve similar current.
+
+The overdrive voltage for NMOS is theoretically 0.34 V and varies slightly between 0.30 V and 0.36 V in simulation. This minor variation occurs due to threshold voltage shifts. For PMOS, the overdrive voltage is 0.24 V, and the simulated range of 0.22 V to 0.26 V shows consistent behavior with the design.
+
+The bias voltage is calculated as 0.89 V, while the simulated value ranges from 0.85 V to 0.9 V, indicating good agreement between theory and practice. Finally, the minimum common-mode input voltage is theoretically -0.34 V and varies from -0.3 V to -0.4 V in simulation, which matches the expected circuit behavior.
+
+the simulated results closely follow the theoretical calculations, with only minor deviations due to practical non-idealities. This confirms that the circuit design is accurate, reliable, and performs as expected under real operating conditions.
+
+## Conclusion:
+In simple terms, the simulated results are very close to the theoretical values, which means the design is working as expected. The small differences you see are normal in real circuits because of non-ideal effects like device mismatch and slight variations in parameters. Overall, the circuit behaves correctly, and the design can be considered reliable and accurate.
+
+## Circuit :2c
+## Circuit diagram:
+![Image description]()
+![Image description]()
+![Image description]()
+![Image description]()
+![Image description]()
