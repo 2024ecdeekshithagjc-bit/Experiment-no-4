@@ -253,6 +253,9 @@ In simple terms, the simulated results are very close to the theoretical values,
 ## DC Operating point:
 ![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no-4/blob/main/OP_2c.png?raw=true)
 ## Transient analysis:
+![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no-4/blob/main/Transient%20analysis_2c.png?raw=true)
+## Ac analysis :
+## Output waveform_1:
 ![Image description]()
-![Image description]()
+## Output waveform_2:
 ![Image description]()
