@@ -256,6 +256,6 @@ In simple terms, the simulated results are very close to the theoretical values,
 ![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no-4/blob/main/Transient%20analysis_2c.png?raw=true)
 ## Ac analysis :
 ## Output waveform_1:
-![Image description]()
+![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no-4/blob/main/output%20waveform_2.png?raw=true)
 ## Output waveform_2:
 ![Image description]()
