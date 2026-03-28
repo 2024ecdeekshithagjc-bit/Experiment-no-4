@@ -105,4 +105,6 @@ V_{ICM(min)} = -0.7 + 0.36 = -0.34,V
  V_{ICM(min)} = -0.34,V 
 
 ## DC Operating Point :
+![Image description]()
+
 
