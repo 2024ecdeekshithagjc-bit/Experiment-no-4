@@ -112,7 +112,7 @@ V_{ICM(min)} = -0.7 + 0.36 = -0.34,V
 
 ## AC analysis :
 ## a) first output waveform:
-![Image description]()
+![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no-4/blob/main/output%20waveform%201.png?raw=true)
 ## b)second output waveform:
 ![Image description]()
 ## DC sweep:
