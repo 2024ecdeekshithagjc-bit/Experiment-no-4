@@ -108,7 +108,7 @@ V_{ICM(min)} = -0.7 + 0.36 = -0.34,V
 ![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no-4/blob/main/operating%20point%201.png?raw=true)
 
 ## Transient analysis:
-![Image description]()
+![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no-4/blob/main/Transient_analysis1.png?raw=true)
 
 ## AC analysis :
 ## a) first output waveform:
