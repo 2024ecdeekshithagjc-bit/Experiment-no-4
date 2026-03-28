@@ -49,60 +49,84 @@ Given:
 Power P = 2mW 
  V_T = 0.36,V 
  V_{in,CM} = 0V, V_{out,CM} = 0V
-## 1. Tail Current ( I_{SS} )
- P=(V_{DD} - V_{SS}) \cdot I_{SS} )
 
- 2m = (0.9 - (-0.9)) \cdot I_{SS} 
+## 1. Tail Current Calculation
 
- 2*10^{-3} = 1.8 \cdot I_{SS} 
+P = (VDD − VSS) ISS
 
- I_{SS} = \frac{2 \times 10^{-3}}{1.8} = 1.11 \times 10^{-3} A = 1.11,mA 
+2 10^-3 = (0.9 − (−0.9)) ISS
+
+2 10^-3 = 1.8 ISS
+
+ISS = (2 10^-3) ÷ 1.8
+
+ISS = 1.11 10^-3 A
+
+ISS = 1.11 mA
 
 ## 2. Drain Currents
-I_{D1} = I_{D2} = \frac{I_{SS}}{2} = 0.555,mA ]
 
-## 3. Drain Resistance ( R_D )
- V_{out} = V_{DD} - I_D * R_D 
+ID1 = ID2 = ISS 2^-1
 
- 0 = 0.9 - I_D* R_D 
+ID1 = ID2 = 0.555 mA
 
-R_D = \frac{0.9}{0.555 \times 10^{-3}} 
+## 3. Drain Resistance (RD)
 
- R_D = 1636,\Omega \approx 1.636,k\Omega 
+Vout = VDD − ID RD
 
+0 = 0.9 − ID RD
+
+RD = 0.9 ÷ (0.555 10^-3)
+
+RD = 1636 Ω
+
+RD = 1.636 kΩ
 ## 4. Region of Operation Check
- V_S = -0.7V\quad V_G = 0V 
 
- V_{OV} = V_{GS} - V_T = 0.34V 
+VS = −0.7 V
+VG = 0 V
 
-V_{DS} = V_D - V_S = 0.7V 
+VOV = VGS − VT
 
-V_{DS} > V_{OV} \Rightarrow 0.7 > 0.34 \quad \text
+VOV = 0.34 V
 
-## 5. Width Calculation ( W )
- I_D = \frac{1}{2} \mu_n C_{ox} \frac{W}{L} (V_{OV})^2 
+VDS = VD − VS
 
-W = \frac{2 I_D L}{\mu_n C_{ox} (V_{OV})^2} 
+VDS = 0.7 V
 
- W = \frac{2 \times 0.555 \times 10^{-3} \times 360 \times 10^{-9}}{2.306 \times 10^{-4} \times (0.34)^2} 
+VDS > VOV
 
- W \approx 14.88 \times 10^{-6} m = 14.88\mu m 
+0.7 > 0.34
+
+## 5. Width Calculation (W)
+
+I_D = \frac{1}{2} \mu_n C_{ox} \frac{W}{L} (V_{OV})^2
+
+W = (2 (0.555 10^-3) (360 10^-9)) ÷ (2.306 10^-4 (0.34)^2)
+
+W = 14.88 10^-6 m
+
+W = 14.88 μm
 
 ## 6. Input Common Mode Range (ICMR)
- V_{GS} \ge V_T 
 
- V_{GS} = V_{ICM} - V_S 
+VGS ≥ VT
 
-V_{ICM(min)} = V_S + V_T 
+VGS = VICM − VS
 
-V_{ICM(min)} = -0.7 + 0.36 = -0.34,V 
+VICM(min) = VS + VT
+
+VICM(min) = −0.7 + 0.36
+
+VICM(min) = −0.34 V
 
 ## Final Results
- I_{SS} = 1.11,mA 
- I_D = 0.555,mA 
- R_D \approx 1.636,k\Omega 
- W \approx 14.88,\mu m 
- V_{ICM(min)} = -0.34,V 
+
+ISS = 1.11 mA
+ID = 0.555 mA
+RD = 1.636 kΩ
+W = 14.88 μm
+VICM(min) = −0.34 V
 
 ## DC Operating Point :
 ![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no-4/blob/main/operating%20point%201.png?raw=true)
@@ -119,52 +143,92 @@ V_{ICM(min)} = -0.7 + 0.36 = -0.34,V
 ![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no-4/blob/main/DC_sweep1.png?raw=true)
 
 ## Step 1: Total Current Calculation
-P = (VDD - VSS) \ Itotal 2 × 10⁻³ = (0.9 - (-0.9)) \ Itotal
 
-2 × 10⁻³ = 1.8 \ Itotal
+P = (VDD − VSS) Itotal
 
-Itotal = {2 × 10⁻³} \ {1.8} = 1.11 mA
+2 10^-3 = (0.9 − (−0.9)) Itotal
 
-So, tail current: I_{tail} = 1.11 mA
+2 10^-3 = 1.8 Itotal
 
-Each transistor carries:
+Itotal = (2 10^-3) ÷ 1.8
 
-I_D = {I_{tail}}{2} = 0.555 { mA}
+Itotal = 1.11 10^-3 A
 
-To Check M3 is in saturation :
-VDS3 = Vp -VSS VDS3 = -0.7V + 0.9V = 0.2V
+Itail = 1.11 mA
 
-VGS3 -Vth <= 0.2 VinCM-max = Vp + VGS1 VGS1 = 0.7V, Vth = 0.7V VinCM-max = 0V
+## Drain Current in Each Transistor
 
-Transconductance (gm)
- g_m = \frac{2I_D}{V_{OV}} 
+ID = Itail 2^-1
 
- g_m = \frac{2 \times 0.555 \text{ mA}}{0.2} = 5.55 \text{ mS} 
+ID = 0.555 mA
 
-## MOSFET Sizing (W/L)
-Using:  I_D = \frac{1}{2} k_n \frac{W}{L} V_{OV}^2 
+## Saturation Check (M3)
 
-Assume:  k_n = 200 , \mu A/V^2 
+VDS3 = Vp − VSS
 
-0.555 \text{ mA} = \frac{1}{2} \cdot 200 \times 10^{-6} \cdot \frac{W}{L} \cdot (0.2)^2 
+VDS3 = −0.7 + 0.9
 
- 0.555 \times 10^{-3} = 100 \times 10^{-6} \cdot \frac{W}{L} \cdot 0.04 
+VDS3 = 0.2 V
 
- 0.555 \times 10^{-3} = 4 \times 10^{-6} \cdot \frac{W}{L} 
+VGS3 − Vth ≤ 0.2
 
- \frac{W}{L} = \frac{0.555 \times 10^{-3}}{4 \times 10^{-6}} \approx 139 
+VinCM(max) = Vp + VGS1
+
+VinCM(max) = 0 V
+
+## Transconductance (gm)
+
+g_m = \frac{2 I_D}{V_{OV}}
+
+gm = (2 (0.555 10^-3)) ÷ 0.2
+
+gm = 5.55 10^-3 S
+
+gm = 5.55 mS
+
+
+## MOSFET Sizing (W L ratio)
+
+I_D = \frac{1}{2} k_n \frac{W}{L} V_{OV}^2
+
+0.555 10^-3 = (1 2^-1) (200 10^-6) (W L^-1) (0.2)^2
+
+0.555 10^-3 = 100 10^-6 (W L^-1) 0.04
+
+0.555 10^-3 = 4 10^-6 (W L^-1)
+
+W L^-1 = (0.555 10^-3) ÷ (4 10^-6)
+
+W L^-1 = 139
 
 ## Step 5: Output Resistance
- r_o = \frac{1}{\lambda I_D} 
 
-Assume: lambda = 0.02 , V^{-1} 
+r_o = \frac{1}{\lambda I_D}
 
-r_o = \frac{1}{0.02 \times 0.555 \times 10^{-3}} \approx 90 , k\Omega 
+ro = 1 ÷ (0.02 (0.555 10^-3))
+
+ro = 90 10^3 Ω
+
+ro = 90 kΩ
 
 ## Step 6: Voltage Gain
-For differential amplifier: A_v = g_m \cdot r_o 
 
-A_v = 5.55 \times 10^{-3} \cdot 90 \times 10^{3} \approx 500 
+A_v = g_m r_o
+
+Av = (5.55 10^-3) (90 10^3)
+
+Av = 499.5
+
+Av = 500
+
+## Final Results
+
+Itail = 1.11 mA
+ID = 0.555 mA
+gm = 5.55 mS
+W L^-1 = 139
+ro = 90 kΩ
+Av = 500
 
 ## final design summary:
 The final design summary represents the key performance parameters of the circuit in a simplified form. The tail current of 1.11 mA is the total bias current flowing through the differential pair, which gets equally divided between the two transistors. As a result, each branch carries a drain current of approximately 0.555 mA. Based on this operating current, the transconductance (gm) is calculated to be 5.55 mS, which indicates how effectively the input voltage is converted into output current.
@@ -226,6 +290,12 @@ VB1 = 0.908 V
 
 ## Transient analysis:
 ![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no-4/blob/main/Transient_analysis_2b.png?raw=true)
+
+From the waveform, both outputs are periodic signals, meaning they repeat continuously over the given time range of 0 ms to 5 ms. The key observation is that the two signals are opposite to each other (out of phase). When V(out1) increases, V(out2) decreases, and vice versa. This is the expected behavior of a differential amplifier, where the circuit responds to the difference between two input signals.
+
+The voltage levels vary approximately between 200 mV and 850 mV. This indicates that the outputs are not centered around zero but are shifted due to DC biasing in the circuit. The smooth rising and falling shapes show that the amplifier is operating properly in its active region.
+ the waveform is slightly curved near the peaks and not perfectly symmetrical. This happens due to non-ideal effects like transistor limitations and finite gain, which are normal in practical circuits. this graph confirms that the circuit is working correctly. It produces two complementary output signals with good symmetry, proper biasing, and expected differential behavior, making it suitable for amplification applications.
+
 ## AC analysis :
 ## a)output waveform 1:
 ![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no-4/blob/main/output_waveform_2b.png?raw=true)
@@ -254,6 +324,16 @@ In simple terms, the simulated results are very close to the theoretical values,
 ![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no-4/blob/main/OP_2c.png?raw=true)
 ## Transient analysis:
 ![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no-4/blob/main/Transient%20analysis_2c.png?raw=true)
+From the graph, you can observe that both outputs are periodic signals, meaning they repeat in a regular pattern over time. The time axis runs from 0 ms to 5 ms, and within this interval, multiple cycles of the waveform are visible, indicating a steady input signal is being applied to the circuit.
+
+The most important thing to notice is that the two signals are out of phase with each other. When V(out1) is going down, V(out2) is going up, and vice versa. This is a key characteristic of a differential amplifier. It means the circuit is amplifying the difference between the two input signals and producing complementary outputs.
+
+In terms of voltage levels, both signals vary roughly between 860 mV and 900 mV. So instead of swinging around zero, the outputs are centered around a DC bias voltage close to 890 mV. This DC level comes from the biasing of the circuit, which ensures the transistors operate in the proper region.
+
+Another observation is that the waveform is not a perfect sine wave. Near the peaks, the signal looks slightly flattened. This indicates that the circuit is experiencing slight non-linearity or limited voltage swing, possibly due to transistor saturation or limited headroom in the supply voltage.
+Also, both outputs have nearly the same amplitude, which shows that the circuit is well balanced. This means the NMOS transistors are properly matched, and the current is evenly distributed between the two branches.
+this waveform confirms that your differential amplifier is working correctly. It is producing two equal but opposite output signals, maintaining a proper bias level, and showing only minor distortions due to practical limitations.
+
 ## Ac analysis :
 ## Output waveform_1:
 ![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no-4/blob/main/output%20waveform_2.png?raw=true)
