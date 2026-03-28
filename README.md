@@ -183,7 +183,7 @@ Symmetric operation around 0 V
 High gain (~500)
 
 ## second circuit:2b
-![Image description]()
+![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no-4/blob/main/circuit_2b.png?raw=true)
 ![Image description]()
 ![Image description]()
 ![Image description]()
