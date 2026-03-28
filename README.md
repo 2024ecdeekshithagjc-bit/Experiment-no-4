@@ -105,6 +105,16 @@ V_{ICM(min)} = -0.7 + 0.36 = -0.34,V
  V_{ICM(min)} = -0.34,V 
 
 ## DC Operating Point :
+![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no-4/blob/main/operating%20point%201.png?raw=true)
+
+## Transient analysis:
 ![Image description]()
 
+## AC analysis :
+## a) first output waveform:
+![Image description]()
+## b)second output waveform:
+![Image description]()
+## DC sweep:
+![Image description]()
 
