@@ -183,4 +183,9 @@ Symmetric operation around 0 V
 High gain (~500)
 
 ## second circuit:2b
+![Image description]()
+![Image description]()
+![Image description]()
+![Image description]()
+![Image description]()
 
