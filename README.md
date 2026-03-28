@@ -251,7 +251,8 @@ In simple terms, the simulated results are very close to the theoretical values,
 ## Circuit diagram:
 ![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no-4/blob/main/circuit_2c.png?raw=true)
 ## DC Operating point:
-![Image description]()
+![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no-4/blob/main/OP_2c.png?raw=true)
+## Transient analysis:
 ![Image description]()
 ![Image description]()
 ![Image description]()
