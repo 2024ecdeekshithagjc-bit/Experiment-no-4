@@ -184,9 +184,52 @@ High gain (~500)
 
 ## second circuit:2b
 ![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no-4/blob/main/circuit_2b.png?raw=true)
+
+## Using MOSFET current equation:
+ID​=21​μp​Cox​LW​(VOV​)2
+
+## Rearranging for W:
+
+W=μp​Cox​(VOV​)22ID​L
+
+## Substituting values:
+
+W = (2 (0.555 10^-3) (360 10^-9)) / (9.73 10^-6 (0.24)^2)
+
+W = (396 10^-12) / (1.128 10^-7)
+
+W = 351.06 10^-6 m
+
+W = 351.06 μm
+
+## 2. Bias Voltage (VB1)
+
+VB1 = VG = VGS + VDD
+
+VB1 = 0 + ID RD
+
+Substituting values:
+
+VB1 = (0.555 10^-3) (1636)
+
+VB1 = 0.908
+
+## Final Results
+
+PMOS Width
+W = 351.06 μm
+
+Bias Voltage
+VB1 = 0.908 V
 ## DC operating point:
 ![Image description](https://github.com/2024ecdeekshithagjc-bit/Experiment-no-4/blob/main/OP_2b.png?raw=true)
+
+## Transient analysis:
 ![Image description]()
+## AC analysis :
+## a)output waveform 1:
 ![Image description]()
+
+## b)output waveform 2:
 ![Image description]()
 
